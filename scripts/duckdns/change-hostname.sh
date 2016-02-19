@@ -1,6 +1,6 @@
 #!/bin/bash
 newhost=$1
-echo "Dont forget to update DDNS: https://www.duckdns.org"
+echo "Dont forget to update/create DDNS: https://www.duckdns.org"
 oldhost=$(</etc/hostname)
 echo "Changing ${oldhost} to ${newhost}"
 hostname ${newhost}

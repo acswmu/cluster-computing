@@ -12,7 +12,7 @@ userHome=$(eval echo ~${USER})
 duckPath="$userHome/duckdns"
 duckLog="$duckPath/duck.log"
 duckScript="$duckPath/duck.sh"
-echo "* Duck DNS setup by The Fan Club - version 1.0"
+echo "* Duck DNS setup, please visit http://www.duckdns.org/ first and add your sub domain "
 echo 
 
 # Remove Option
@@ -50,7 +50,7 @@ then
 fi
 # Get Token value
 echo 
-echo -ne "Enter your Duck DNS Token value : "
+echo -ne "Enter your Duck DNS Token value (listed on http://www.duckdns.org/) : "
 read duckToken
 echo
 # Display Confirmation

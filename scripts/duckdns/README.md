@@ -1,0 +1,1 @@
+before running duck-setup.sh make sure to visit https://www.duckdns.org/
