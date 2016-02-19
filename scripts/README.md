@@ -1,1 +1,1 @@
-put anything useful used fo setup in here
+put anything useful used for setup in here
