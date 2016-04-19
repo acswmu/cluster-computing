@@ -10,6 +10,7 @@ alias refresh-aliases='source /root/cluster-computing/.bash_aliases'
 
 export PATH=$PATH:/root/cluster-computing/scripts
 export PATH=$PATH:/usr/local/spark/bin
+export PATH=$PATH:/usr/local/spark/sbin
 export PATH=/usr/local/apache-maven-3.3.9/bin:$PATH
 #export VER=`sbt version | tail -1 | cut -f2`
 
