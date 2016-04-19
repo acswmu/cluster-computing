@@ -1,4 +1,4 @@
-# Note: please place the following line in /etc/profile.d/00-aliases.sh
+# Note: please place the following line in /root/.bashrc
 # source /root/cluster-computing/.bash_aliases
 alias edit-alias='vim /root/cluster-computing/.bash_aliases'
 alias config-dhcp='vim /etc/dhcp/dhcpd.conf'
@@ -11,7 +11,7 @@ alias refresh-aliases='source /root/cluster-computing/.bash_aliases'
 export PATH=$PATH:/root/cluster-computing/scripts
 export PATH=$PATH:/usr/local/spark/bin
 export PATH=/usr/local/apache-maven-3.3.9/bin:$PATH
-export VER=`sbt version | tail -1 | cut -f2`
+#export VER=`sbt version | tail -1 | cut -f2`
 
 
 #HADOOP VARIABLES START
