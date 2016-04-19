@@ -8,6 +8,7 @@ alias config-nat='vim /usr/local/bin/iptables-config'
 alias restart-all='iptables-config ; service bind9 restart ; service isc-dhcp-server restart'
 alias refresh-aliases='source /root/cluster-computing/.bash_aliases'
 
+export PATH=$PATH:/root/cluster-computing/scripts
 export PATH=$PATH:/usr/local/spark/bin
 export PATH=/usr/local/apache-maven-3.3.9/bin:$PATH
 export VER=`sbt version | tail -1 | cut -f2`
