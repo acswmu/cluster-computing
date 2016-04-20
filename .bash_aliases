@@ -18,8 +18,8 @@ export PATH=/usr/local/apache-maven-3.3.9/bin:$PATH
 #HADOOP VARIABLES START
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 export HADOOP_INSTALL=/usr/local/hadoop
-#export PATH=$PATH:$HADOOP_INSTALL/bin
-#export PATH=$PATH:$HADOOP_INSTALL/sbin
+export PATH=$PATH:$HADOOP_INSTALL/bin
+export PATH=$PATH:$HADOOP_INSTALL/sbin
 export HADOOP_MAPRED_HOME=$HADOOP_INSTALL
 export HADOOP_COMMON_HOME=$HADOOP_INSTALL
 export HADOOP_HDFS_HOME=$HADOOP_INSTALL
