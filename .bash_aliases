@@ -6,7 +6,7 @@ alias config-dns='vim /etc/bind/db.acs'
 alias config-ports='vim /etc/opt/forwards'
 alias config-nat='vim /usr/local/bin/iptables-config'
 alias restart-all='iptables-config ; service bind9 restart ; service isc-dhcp-server restart'
-alias refresh-aliases='source /root/cluster-computing/.bash_aliases'
+alias refresh-aliases='source /root/cluster-computing/.bash_aliases ; chmod +x /root/cluster-computing/scripts/*'
 
 export PATH=$PATH:/root/cluster-computing/scripts
 export PATH=$PATH:/usr/local/spark/bin
