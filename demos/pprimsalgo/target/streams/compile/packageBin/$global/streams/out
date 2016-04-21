@@ -1,0 +1,23 @@
+[0m[[0minfo[0m] [0mPackaging /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/parallel-prims-algorthm_2.10-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	PrimsAlgo$$anonfun$readCSV$1.class[0m
+[0m[[0mdebug[0m] [0m	  /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/classes/PrimsAlgo$$anonfun$readCSV$1.class[0m
+[0m[[0mdebug[0m] [0m	PrimsAlgo$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/classes/PrimsAlgo$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	PrimsAlgo$$anonfun$readCSV$1$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/classes/PrimsAlgo$$anonfun$readCSV$1$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	PrimsAlgo$$anonfun$generateMST$2.class[0m
+[0m[[0mdebug[0m] [0m	  /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/classes/PrimsAlgo$$anonfun$generateMST$2.class[0m
+[0m[[0mdebug[0m] [0m	PrimsAlgo$$anonfun$readCSV$1$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/classes/PrimsAlgo$$anonfun$readCSV$1$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	PrimsAlgo$$anonfun$generateMST$1.class[0m
+[0m[[0mdebug[0m] [0m	  /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/classes/PrimsAlgo$$anonfun$generateMST$1.class[0m
+[0m[[0mdebug[0m] [0m	Node.class[0m
+[0m[[0mdebug[0m] [0m	  /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/classes/Node.class[0m
+[0m[[0mdebug[0m] [0m	PrimsAlgo.class[0m
+[0m[[0mdebug[0m] [0m	  /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/classes/PrimsAlgo.class[0m
+[0m[[0mdebug[0m] [0m	PrimsAlgo$.class[0m
+[0m[[0mdebug[0m] [0m	  /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/classes/PrimsAlgo$.class[0m
+[0m[[0mdebug[0m] [0m	Edge.class[0m
+[0m[[0mdebug[0m] [0m	  /root/cluster-computing/demos/pprimsalgo/target/scala-2.10/classes/Edge.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
