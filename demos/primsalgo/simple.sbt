@@ -1,4 +1,4 @@
-name := "Graphx Text"
+name := "Prims Algorthm"
 
 version := "1.0"
 
