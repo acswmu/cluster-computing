@@ -972,7 +972,7 @@ void isomorphic_graph_pair( int vertices,
    }
    else 
       for ( i = 0; i < vertices; i++ )
-         fprintf( fptr, "%5d  %5d\n", i + 1, aliases[ i ] + 1 );
+         fprintf( fptr, "%5d,  %5d\n", i + 1, aliases[ i ] + 1 );
    fclose( fptr );
 
    /* print a graph isomorphic to the original:
@@ -1221,10 +1221,10 @@ void r_graph( int v,
 
    printf( "\n\tWriting graph to file %s.\n", out_file );
 
-   fprintf( fp, "%5d   %5d\n", v, e );
+   fprintf( fp, "%5d,   %5d\n", v, e );
 
    for ( i = 0; i < e; i++ )
-      fprintf( fp, "%5d   %5d   %5d\n", 1 + ran( v ), 1 + ran( v ),
+      fprintf( fp, "%5d,   %5d,   %5d\n", 1 + ran( v ), 1 + ran( v ),
                weight_flag ? 1 + ran( max_wgt ) : 1 );
 
    printf( "\tGraph is written to file %s.\n", out_file );
@@ -1365,14 +1365,14 @@ void complete_graph( int v,
    }
    printf( "\n\tWriting graph to file %s.\n", out_file );
 
-   fprintf( fp, "%5d   %5d\n", v,
+   fprintf( fp, "%5d,   %5d\n", v,
             dir_flag ? v * ( v - 1 ) : v * ( v - 1 ) / 2 );
 
    for ( i = 1; i < v; i++ )
       for ( j = i + 1; j <= v; j++ ) {
-         fprintf( fp, "%5d   %5d   %5d\n", i, j, 1 + ran( max_wgt ) );
+         fprintf( fp, "%5d,   %5d,   %5d\n", i, j, 1 + ran( max_wgt ) );
          if ( dir_flag )
-            fprintf( fp, "%5d   %5d   %5d\n", j, i, 1 + ran( max_wgt ) );
+            fprintf( fp, "%5d,   %5d,   %5d\n", j, i, 1 + ran( max_wgt ) );
       }
 
    fclose( fp );
@@ -1601,21 +1601,21 @@ void print_graph( int v,
    }
    printf( "\n\tWriting graph to file %s.\n", out_file );
 
-   fprintf( fp, "%5d   %5d\n", v, e );
+   fprintf( fp, "%5d,   %5d\n", v, e );
 
    if ( !dir_flag )
       for ( i = 1; i < v; i++ )
          for ( j = i + 1; j <= v; j++ ) {
             index = ( i - 1 ) * v + j - 1;
             if ( adj_matrix[ index ] )
-               fprintf( fp, "%5d   %5d   %5d\n", i, j, adj_matrix[ index ] );
+               fprintf( fp, "%5d,   %5d,   %5d\n", i, j, adj_matrix[ index ] );
          }
    else
       for ( i = 1; i <= v; i++ )
          for ( j = 1; j <= v; j++ ) {
             index = ( i - 1 ) * v + j - 1;
             if ( adj_matrix[ index ] )
-               fprintf( fp, "%5d   %5d   %5d\n", i, j, adj_matrix[ index ] );
+               fprintf( fp, "%5d,   %5d,   %5d\n", i, j, adj_matrix[ index ] );
          }
    fclose( fp );
    printf( "\tGraph is written to file %s.\n", out_file );
