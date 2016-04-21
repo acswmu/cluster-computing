@@ -5,6 +5,7 @@
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.SparkConf
+import scala.io.Source
 
 class Node(id: Int) {
   var edges = List[Edge]()
@@ -71,7 +72,7 @@ object primsAlgo {
   }
 
   def readCSV(fileName: String): Array[Array[Double]] = {
-    val bufferedSource = io.Source.fromFile(fileName)
+    val bufferedSource = io.Source.fromFile(fileName,"ISO-8859-1")
     var matrix: Array[Array[Double]] = Array.empty
     for (line <- bufferedSource.getLines) {
       val cols = line.split(",").map(_.trim.toDouble)

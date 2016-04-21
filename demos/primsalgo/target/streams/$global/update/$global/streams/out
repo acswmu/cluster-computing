@@ -1,26 +1,26 @@
-[0m[[0minfo[0m] [0mUpdating {file:/root/cluster-computing/demos/graphxtest/}graphxtest...[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: graphx-text#graphx-text_2.10;1.0[0m
+[0m[[0minfo[0m] [0mUpdating {file:/root/cluster-computing/demos/primsalgo/}primsalgo...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: prims-algorthm#prims-algorthm_2.10;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.5 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e17f68c[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e066f29[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.5[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.5 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.5] org.scala-lang#scala-library;2.10.5[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-core_2.10;1.6.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-core_2.10;1.6.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-core_2.10;1.6.1[0m
 [0m[[0mdebug[0m] [0m	found org.apache.spark#spark-core_2.10;1.6.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.apache.avro#avro-mapred;1.7.7 [compile->compile(*)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.avro#avro-mapred;1.7.7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.avro#avro-mapred;1.7.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -3148,30 +3148,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->net.sf.py4j#py4j;0.9 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-graphx_2.10;1.6.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-graphx_2.10;1.6.1 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.apache.spark#spark-graphx_2.10;1.6.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-graphx_2.10;1.6.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/org.apache.spark/spark-graphx_2.10/1.6.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.spark#spark-graphx_2.10;1.6.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache.spark#spark-graphx_2.10;1.6.1[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.pom (1.6.1)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-graphx_2.10;1.6.1!spark-graphx_2.10.pom(pom.original) (199ms)[0m
-[0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.10;1.6.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.10;1.6.1 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.10;1.6.1[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/org.apache.spark/spark-graphx_2.10/1.6.1/jars/spark-graphx_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.apache.spark#spark-graphx_2.10;1.6.1 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-graphx_2.10;1.6.1[0m
+[0m[[0mdebug[0m] [0m	found org.apache.spark#spark-graphx_2.10;1.6.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime(*)][0m
@@ -3206,17 +3190,71 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0[0m
+[0m[[0mdebug[0m] [0m	found com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->compile(*)][0m
+[0m[[0minfo[0m] [0mResolving com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1[0m
+[0m[[0mdebug[0m] [0m	found com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->compile(*)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor;2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor;2.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor;2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.akka#akka-actor;2.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/com.typesafe.akka/akka-actor/2.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.akka#akka-actor;2.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor/2.0/akka-actor-2.0.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor/2.0/akka-actor-2.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.akka#akka-actor;2.0[0m
+[0m[[33mwarn[0m] [0m	module not found: com.typesafe.akka#akka-actor;2.0[0m
+[0m[[33mwarn[0m] [0m==== local: tried[0m
+[0m[[33mwarn[0m] [0m  /root/.ivy2/local/com.typesafe.akka/akka-actor/2.0/ivys/ivy.xml[0m
+[0m[[33mwarn[0m] [0m==== public: tried[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor/2.0/akka-actor-2.0.pom[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.apache.avro#avro-mapred;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.avro#avro-mapred;1.7.7->org.apache.avro#avro-ipc;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.mortbay.jetty#jetty;6.1.26 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
@@ -5889,10 +5927,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->net.sf.py4j#py4j;0.9 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.xbean#xbean-asm5-shaded;4.4 [compile->compile(*)][0m
@@ -5913,18 +5951,48 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.apache.avro#avro-mapred;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.avro#avro-mapred;1.7.7->org.apache.avro#avro-ipc;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.mortbay.jetty#jetty;6.1.26 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
@@ -8597,10 +8665,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->net.sf.py4j#py4j;0.9 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.xbean#xbean-asm5-shaded;4.4 [compile->compile(*)][0m
@@ -8621,21 +8689,51 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.apache.avro#avro-mapred;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.avro#avro-mapred;1.7.7->org.apache.avro#avro-ipc;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.mortbay.jetty#jetty;6.1.26 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
@@ -11308,10 +11406,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->net.sf.py4j#py4j;0.9 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.xbean#xbean-asm5-shaded;4.4 [compile->compile(*)][0m
@@ -11332,20 +11430,50 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.apache.avro#avro-mapred;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.avro#avro-mapred;1.7.7->org.apache.avro#avro-ipc;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.mortbay.jetty#jetty;6.1.26 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
@@ -14018,10 +14146,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->net.sf.py4j#py4j;0.9 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.xbean#xbean-asm5-shaded;4.4 [compile->compile(*)][0m
@@ -14042,20 +14170,50 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.apache.avro#avro-mapred;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.avro#avro-mapred;1.7.7->org.apache.avro#avro-ipc;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.mortbay.jetty#jetty;6.1.26 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
@@ -16728,10 +16886,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->net.sf.py4j#py4j;0.9 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-core_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.spark#spark-core_2.10;1.6.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.apache.xbean#xbean-asm5-shaded;4.4 [compile->compile(*)][0m
@@ -16752,26 +16910,56 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.6.1->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.6.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.11 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.9.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0->com.typesafe.akka#akka-actor;2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [pom][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [pom][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for graphx-text#graphx-text_2.10;1.0 [scala-tool][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-compiler;2.10.5 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for prims-algorthm#prims-algorthm_2.10;1.0 [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-compiler;2.10.5 [scala-tool->default][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.10.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.10.5 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.5[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.10.5 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-compiler;2.10.5 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-compiler;2.10.5 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-compiler;2.10.5 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-compiler;2.10.5 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.5->org.scala-lang#scala-library;2.10.5 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.5->org.scala-lang#scala-library;2.10.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.5->org.scala-lang#scala-library;2.10.5 [compile->default][0m
@@ -16796,8 +16984,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.5->org.scala-lang#scala-library;2.10.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.5->org.scala-lang#scala-reflect;2.10.5 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.5->org.scala-lang#scala-reflect;2.10.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-compiler;2.10.5 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-compiler;2.10.5 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-compiler;2.10.5 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-compiler;2.10.5 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.5->org.scala-lang#jline;2.10.5 [optional->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.5 {optional=[compile(*), master(*)]}[0m
@@ -16810,21 +16998,17 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.5->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [scala-tool->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies graphx-text#graphx-text_2.10;1.0->org.scala-lang#scala-library;2.10.5 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies prims-algorthm#prims-algorthm_2.10;1.0->org.scala-lang#scala-library;2.10.5 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.5!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-core_2.10;1.6.1!spark-core_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.6.1/spark-graphx_2.10-1.6.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-graphx_2.10;1.6.1!spark-graphx_2.10.jar (684ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-graphx_2.10;1.6.1!spark-graphx_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.scala-incubator.io#scala-io-core_2.9.1;0.4.0!scala-io-core_2.9.1.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.avro#avro-mapred;1.7.7!avro-mapred.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#chill_2.10;0.5.0!chill_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#chill-java;0.5.0!chill-java.jar[0m
@@ -16947,23 +17131,85 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.tachyonproject#tachyon-underfs-local;0.8.2!tachyon-underfs-local.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.fommil.netlib#core;1.1.2!core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sourceforge.f2j#arpack_combined_all;0.1!arpack_combined_all.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.jsuereth.scala-arm#scala-arm_2.9.1;1.1!scala-arm_2.9.1.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.5!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.5!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.5!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 8313ms :: artifacts dl 876ms[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 compile produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 runtime produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 test produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 provided produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 optional produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 compile-internal produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 runtime-internal produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 test-internal produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 plugin produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 sources produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 docs produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 pom produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for graphx-text#graphx-text_2.10;1.0 scala-tool produced in /root/cluster-computing/demos/graphxtest/target/resolution-cache/reports/graphx-text-graphx-text_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (8313ms resolve - 876ms download)[0m
-[0m[[0minfo[0m] [0mDone updating.[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7838ms :: artifacts dl 395ms[0m
+[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[33mwarn[0m] [0m	::          UNRESOLVED DEPENDENCIES         ::[0m
+[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[33mwarn[0m] [0m	:: com.typesafe.akka#akka-actor;2.0: not found[0m
+[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 compile produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 runtime produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 test produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 provided produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 optional produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 compile-internal produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 runtime-internal produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 test-internal produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 plugin produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 sources produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 docs produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 pom produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for prims-algorthm#prims-algorthm_2.10;1.0 scala-tool produced in /root/cluster-computing/demos/primsalgo/target/resolution-cache/reports/prims-algorthm-prims-algorthm_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (7838ms resolve - 395ms download)[0m
+[0m[[33mwarn[0m] [0m[0m
+[0m[[33mwarn[0m] [0m	Note: Unresolved dependencies path:[0m
+[0m[[33mwarn[0m] [0m		com.typesafe.akka:akka-actor:2.0[0m
+[0m[[33mwarn[0m] [0m		  +- com.github.scala-incubator.io:scala-io-core_2.9.1:0.4.0 (/root/cluster-computing/demos/primsalgo/simple.sbt#L7-14)[0m
+[0m[[33mwarn[0m] [0m		  +- prims-algorthm:prims-algorthm_2.10:1.0[0m
+sbt.ResolveException: unresolved dependency: com.typesafe.akka#akka-actor;2.0: not found
+	at sbt.IvyActions$.sbt$IvyActions$$resolve(IvyActions.scala:313)
+	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:191)
+	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:168)
+	at sbt.IvySbt$Module$$anonfun$withModule$1.apply(Ivy.scala:156)
+	at sbt.IvySbt$Module$$anonfun$withModule$1.apply(Ivy.scala:156)
+	at sbt.IvySbt$$anonfun$withIvy$1.apply(Ivy.scala:133)
+	at sbt.IvySbt.sbt$IvySbt$$action$1(Ivy.scala:57)
+	at sbt.IvySbt$$anon$4.call(Ivy.scala:65)
+	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:93)
+	at xsbt.boot.Locks$GlobalLock.xsbt$boot$Locks$GlobalLock$$withChannelRetries$1(Locks.scala:78)
+	at xsbt.boot.Locks$GlobalLock$$anonfun$withFileLock$1.apply(Locks.scala:97)
+	at xsbt.boot.Using$.withResource(Using.scala:10)
+	at xsbt.boot.Using$.apply(Using.scala:9)
+	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:58)
+	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:48)
+	at xsbt.boot.Locks$.apply0(Locks.scala:31)
+	at xsbt.boot.Locks$.apply(Locks.scala:28)
+	at sbt.IvySbt.withDefaultLogger(Ivy.scala:65)
+	at sbt.IvySbt.withIvy(Ivy.scala:128)
+	at sbt.IvySbt.withIvy(Ivy.scala:125)
+	at sbt.IvySbt$Module.withModule(Ivy.scala:156)
+	at sbt.IvyActions$.updateEither(IvyActions.scala:168)
+	at sbt.Classpaths$$anonfun$sbt$Classpaths$$work$1$1.apply(Defaults.scala:1439)
+	at sbt.Classpaths$$anonfun$sbt$Classpaths$$work$1$1.apply(Defaults.scala:1435)
+	at sbt.Classpaths$$anonfun$doWork$1$1$$anonfun$90.apply(Defaults.scala:1470)
+	at sbt.Classpaths$$anonfun$doWork$1$1$$anonfun$90.apply(Defaults.scala:1468)
+	at sbt.Tracked$$anonfun$lastOutput$1.apply(Tracked.scala:37)
+	at sbt.Classpaths$$anonfun$doWork$1$1.apply(Defaults.scala:1473)
+	at sbt.Classpaths$$anonfun$doWork$1$1.apply(Defaults.scala:1467)
+	at sbt.Tracked$$anonfun$inputChanged$1.apply(Tracked.scala:60)
+	at sbt.Classpaths$.cachedUpdate(Defaults.scala:1490)
+	at sbt.Classpaths$$anonfun$updateTask$1.apply(Defaults.scala:1417)
+	at sbt.Classpaths$$anonfun$updateTask$1.apply(Defaults.scala:1369)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[0m[[31merror[0m] [0m(*:[31mupdate[0m) sbt.ResolveException: unresolved dependency: com.typesafe.akka#akka-actor;2.0: not found[0m
