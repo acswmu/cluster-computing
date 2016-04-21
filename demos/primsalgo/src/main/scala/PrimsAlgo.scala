@@ -25,7 +25,7 @@ class Edge(val from: Node, val to: Node, val weight: Int) extends Ordered[Edge] 
   override def toString() = from + "," + to + "," + weight
 }
 
-object primsAlgo {
+object PrimsAlgo {
 
   def main(args: Array[String]) {
     val logFile = "/root/cluster-computing/demos/primsalgo/RawData.csv" // Should be some file on your system
@@ -35,7 +35,7 @@ object primsAlgo {
 
 
     var count = 0
-    val rowArray = readCSV(logFile)
+    val rowArray = readCSV(logFile,sc)
     val colArray = rowArray.transpose
     val nodesList = (colArray(0).toList ++ colArray(1).toList).distinct
     var nodeStruct = new Array[Node](nodesList.length + 1)
@@ -71,14 +71,16 @@ object primsAlgo {
 
   }
 
-  def readCSV(fileName: String): Array[Array[Double]] = {
-    val bufferedSource = io.Source.fromFile(fileName,"ISO-8859-1")
+  def readCSV(fileName: String,sc: SparkContext): Array[Array[Double]] = {
+    
+    val logData = sc.textFile(fileName, 2).cache()
     var matrix: Array[Array[Double]] = Array.empty
-    for (line <- bufferedSource.getLines) {
-      val cols = line.split(",").map(_.trim.toDouble)
-      matrix = matrix :+ cols
+
+    val rrdarr = logData.take(logData.count.toInt)
+    rrdarr.foreach{line =>    
+    val cols = line.split(",").map(_.trim.toDouble)
+    matrix = matrix :+ cols
     }
-    bufferedSource.close
     return matrix
   }
 

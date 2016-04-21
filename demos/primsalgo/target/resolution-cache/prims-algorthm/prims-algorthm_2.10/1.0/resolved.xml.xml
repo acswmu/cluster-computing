@@ -4,7 +4,7 @@
 		module="prims-algorthm_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20160420234948"
+		publication="20160421000355"
 	>
 		<description>
 		Prims Algorthm
@@ -36,7 +36,5 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.5" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.10" rev="1.6.1" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-graphx_2.10" rev="1.6.1" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.akka" name="akka-actor_2.10" rev="2.3.4" conf="compile->default(compile)"/>
-		<dependency org="com.github.scala-incubator.io" name="scala-io-core_2.9.1" rev="0.4.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
