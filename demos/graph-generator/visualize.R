@@ -1,6 +1,18 @@
+# NodeData.txt
+# 5,10
+# 1,2,3
+# 1,3,15
+# 1,4,12
+# 1,5,8
+# 2,3,2
+# 2,4,16
+# 2,5,10
+# 3,4,3
+# 3,5,12
+# 4,5,7
+
 library(igraph)
 library(qgraph)
-library(partitons)
 # Reading in file data
 all_content = readLines("NodeData.txt")
 
@@ -75,16 +87,19 @@ plot(ik, edge.label=round(E(ik)$weight, 3))
 dev.off()
 
 # Print MST 
+cat("\nFULL MST\n")
 print(minList)
-cat('\nedge total= ',sum(minList[, 3]))
+cat('\nedge total= ',sum(minList[, 3]),"\n\n")
 
 
 
 #########################################################################
 # Spliting the Graph into parts
-ceiling(nodes/2)
-part1 = mat[1:ceiling(nodes/2),1:ceiling(nodes/2)]
-part2 = mat[(ceiling(nodes/2)+1):nodes,(ceiling(nodes/2)+1):nodes]
+
+# Part1
+part1 = mat
+part1[1:nodes,(ceiling(nodes/2)+1):nodes] = 0
+part1[(ceiling(nodes/2)+1):nodes,1:nodes] = 0
 
 
 ia <- graph.adjacency(part1, mode = "undirected", weighted = TRUE)
@@ -127,11 +142,14 @@ for (i in 1:length(solution) / 2) {
 
 # Print MST 
 print(minList2)
-cat('\nedge total= ',sum(minList2[, 3]))
+cat('\nPart1 edge total= ',sum(minList2[, 3]),"\n\n")
 
 
 
-## PART 2
+##### PART 2
+part2 = mat
+part2[1:ceiling(nodes/2),1:nodes]=0
+part2[1:nodes,1:ceiling(nodes/2)]=0
 ib <- graph.adjacency(part2, mode = "undirected", weighted = TRUE)
 mstp2 = mst(ib)
 plot(ib, edge.label=round(E(ib)$weight, 3))
@@ -171,4 +189,14 @@ for (i in 1:length(solution) / 2) {
 
 # Print MST 
 print(minList3)
-cat('\nedge total= ',sum(minList3[, 3]))
+cat('\nPart2 edge total= ',sum(minList3[, 3]),"\n\n")
+
+
+
+part3 = mat
+part3=part3-part1
+part3=part3-part2
+conval = min(part3[part3>0])
+loc = which(part3 == conval, arr.ind=TRUE)
+cat('\nMerge Edge:',loc[1,1],"<--->",loc[1,2],"   (",mat[loc[1,1],loc[1,2]],")")
+cat('\n\nMST by parts:',sum(minList2[, 3])+sum(minList3[, 3])+mat[loc[1,1],loc[1,2]])
