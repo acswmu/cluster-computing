@@ -14,7 +14,7 @@
 - sudo iptables-config 
 - (saves output to /etc/iptables/rules.v4)
 
-#Interface config locations
+#Interface config locations:
 - /etc/default/isc-dhcp-server
 - /etc/network/interfaces
 - /etc/hosts
