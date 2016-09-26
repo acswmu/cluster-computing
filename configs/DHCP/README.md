@@ -13,3 +13,8 @@
 - /usr/local/bin/iptables-config
 - sudo iptables-config 
 - (saves output to /etc/iptables/rules.v4)
+
+#Interface config locations
+- /etc/default/isc-dhcp-server
+- /etc/network/interfaces
+- /etc/hosts

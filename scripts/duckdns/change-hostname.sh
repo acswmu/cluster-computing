@@ -6,6 +6,6 @@ echo "Changing ${oldhost} to ${newhost}"
 hostname ${newhost}
 sudo perl -pi -e "s/${oldhost}/${newhost}/g" /etc/hosts
 sudo perl -pi -e "s/${oldhost}/${newhost}/g" /etc/hostname
-sudo perl -pi -e "s/${oldhost}/${newhost}/g" /home/acsuser/duckdns/duck.sh
+#sudo perl -pi -e "s/${oldhost}/${newhost}/g" /home/acsuser/duckdns/duck.sh
 sudo service networking restart 
 echo "please reboot"
