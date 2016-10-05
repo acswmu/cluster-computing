@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Script to setup iptables firewall on ralph.
 # Inspired by monofuel.
@@ -11,9 +11,9 @@ info() {
 
 # Network interfaces.
 # Wide Area Network: WMU
-readonly WAN="enp1s0"
+readonly WAN="eno1"
 # Local Area Network: acs office
-readonly LAN="enp2s0"
+readonly LAN="enp3s2"
 
 info 'Flushing all chains'
 iptables -F
@@ -47,6 +47,10 @@ iptables -I INPUT -p UDP --dport 53 -j ACCEPT
 iptables -I INPUT -p TCP --dport 53 -j ACCEPT
 iptables -I OUTPUT -p UDP --dport 53 -j ACCEPT
 iptables -I OUTPUT -p TCP --dport 53 -j ACCEPT
+
+info 'Enablling ntp (udp port 123)'
+iptables -A INPUT -p udp --dport 123 -j ACCEPT
+iptables -A OUTPUT -p udp --sport 123 -j ACCEPT
 
 info 'Enabling port forwarding'
 # The kernel doesn't allow ip forwarding by default. The option is enabled
