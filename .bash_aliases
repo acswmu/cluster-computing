@@ -36,7 +36,7 @@ function lazygit() {
 }
 
 function supergit() {
-    git add A
+    git add -A
     git commit -a -m "$1"
     git push
     ansible no-master -a "bash cluster-computing/scripts/git-pull.sh"
