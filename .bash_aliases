@@ -30,13 +30,13 @@ export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"
 
 
 function lazygit() {
-    git add .
+    git add -A
     git commit -a -m "$1"
     git push
 }
 
 function supergit() {
-    git add .
+    git add A
     git commit -a -m "$1"
     git push
     ansible no-master -a "bash cluster-computing/scripts/git-pull.sh"
