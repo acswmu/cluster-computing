@@ -1,4 +1,0 @@
-# Port forwarding definitions
-for_host "zergling-0.acs"
-forward "2200" "22"
-forward "8000" "80"

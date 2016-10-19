@@ -20,6 +20,11 @@
         <name>dfs.replication</name>
         <value>2</value>
     </property>
+    <property>
+        <name>dfs.hosts</name>
+        <value>/usr/local/hadoop/etc/hadoop/slaves</value>
+    </property>
+	
 	<property>
 		<name>dfs.namenode.name.dir</name>
 		<value>/usr/local/hadoop/hadoop_data/hdfs/namenode</value>
