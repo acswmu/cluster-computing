@@ -39,6 +39,15 @@ graph.vertices.filter {
   case (id, (name, age)) => println(s"$name is $age")
 }
 
+for (triplet <- graph.triplets.collect) {
+  println(s"${triplet.srcAttr._1} likes ${triplet.dstAttr._1}")
+}
+
+for (triplet <- graph.triplets.filter(t => t.attr > 5).collect) {
+  println(s"${triplet.srcAttr._1} loves ${triplet.dstAttr._1}")
+}
+
+
 //    val logFile = "/usr/local/spark/README.md" // Should be some file on your system
 //    val conf = new SparkConf().setAppName("Graphx Test")
 //    val sc = new SparkContext(conf)
