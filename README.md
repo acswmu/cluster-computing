@@ -18,23 +18,56 @@
 4. Spark
 5. Ganglia
 
-## Install Guide
+## Install Guide (do everything as root)
+
+### Base Components
+```bash
+apt-get install rsync git build-essential vim
+cd ~/
+git clone https://github.com/acswmu/cluster-computing.git
+echo "source /root/cluster-computing/.bash_aliases" >> ~/.bashrc
+```
 
 ### Java
 ```bash
-sudo add-apt-repository ppa:openjdk-r/ppa
-sudo apt-get update
-sudo apt-get install openjdk-7-jdk
-sudo update-java-alternatives
+add-apt-repository ppa:openjdk-r/ppa
+apt-get update
+apt-get install openjdk-7-jdk
+update-java-alternatives
 ```
 ### Scala
 ```bash
-sudo wget http://www.scala-lang.org/files/archive/scala-2.11.8.deb
-sudo dpkg -i scala-2.11.8.deb
-sudo apt-get update
-sudo apt-get install scala
+wget http://www.scala-lang.org/files/archive/scala-2.11.8.deb
+dpkg -i scala-2.11.8.deb
+apt-get update
+apt-get install scala
 wget https://dl.bintray.com/sbt/debian/sbt-0.13.11.deb
-sudo dpkg -i sbt-0.13.11.deb
-sudo apt-get update
-sudo apt-get install sbt
+dpkg -i sbt-0.13.11.deb
+apt-get update
+apt-get install sbt
 ```
+
+### Hadoop
+Configuration file examples in configs/hadoop
+
+#### Creating Hadoop User
+```bash
+adduser hduser
+passwd hduser #input password for hduser here
+su hduser
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 0600 ~/.ssh/authorized_keys
+ssh localhost
+```
+#### Setting Up Hadoop
+```bash
+wget http://apache.claz.org/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.tar.gz
+tar xzf hadoop-2.7.1.tar.gz
+mv hadoop-2.7.1 /usr/local/hadoop
+```
+
+
+
+
+
