@@ -62,10 +62,11 @@ ssh localhost
 ```
 #### Setting Up Hadoop
 ```bash
-wget http://apache.claz.org/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.tar.gz
-tar xzf hadoop-2.7.1.tar.gz
-mv hadoop-2.7.1 /usr/local/hadoop
+ wget https://archive.apache.org/dist/hadoop/core/hadoop-2.4.1/hadoop-2.4.1.tar.gz
+tar xzf hadoop-2.4.1.tar.gz
+mv hadoop-2.4.1 /usr/local/hadoop
 ```
+
 
 
 
