@@ -25,7 +25,7 @@
 ### Base Components
 ```bash
 apt-get update
-apt-get install rsync git build-essential software-properties-common vim libssl-dev libcurl4-gnutls-dev cmake r-base r-base-dev zlib1g-dev libcurl4-openssl-dev
+apt-get install rsync git build-essential software-properties-common vim libssl-dev libcurl4-gnutls-dev cmake r-base r-base-dev zlib1g-dev libcurl4-openssl-dev pandoc
 cd ~/
 git clone https://github.com/acswmu/cluster-computing.git
 echo "source /root/cluster-computing/.bash_aliases" >> ~/.bashrc
@@ -72,7 +72,7 @@ chmod 0600 ~/.ssh/authorized_keys
 ssh localhost
 ```
 
-#### Setting Up Hadoop  
+#### Setting up Hadoop from source 
 ```bash
 wget https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
 tar xzf protobuf-2.5.0.tar.gz
@@ -97,19 +97,17 @@ chown -R hduser:hadoop /usr/local/hadoop/
 #### Starting hdfs for the first time (RUN ON MASTER ONLY)
 After running these steps go http://YOUR_SERVER_IP:50070/dfshealth.html#tab-datanode to ensure node is running
 ```bash
-su hduser
 cd /usr/local/hadoop/
-mkdir -p /usr/local/hadoop/hadoop_data/hdfs/namenode
-hdfs namenode -format
-./sbin/start-dfs.sh
+sudo -i -u hduser mkdir -p /usr/local/hadoop/hadoop_data/hdfs/namenode
+sudo -i -u hduser hdfs namenode -format
+sudo -i -u hduser ./sbin/start-dfs.sh
 ```
 
 #### Adding Nodes to Cluster(RUN ON MASTER ONLY)
 The script add-node-hadoop.sh modifies /usr/local/hadoop/etc/hadoop/slaves and adds the new node
 ```bash
-su hduser
-bash /root/cluster-computing/scripts/add-node-hadoop.sh NEW_NODES_IP
-hdfs dfsadmin -refreshNodes
+sudo -i -u hduser bash /root/cluster-computing/scripts/add-node-hadoop.sh NEW_NODES_IP
+sudo -i -u hduser hdfs dfsadmin -refreshNodes
 ```
 
 ### Hive and Derby (RUN ON MASTER ONLY)
@@ -128,30 +126,32 @@ mkdir /usr/local/derby/data
 #### Creating Distributed File System (RUN ON MASTER ONLY)
 ```bash
 chown -R hduser:hadoop /usr/local/hive/ /usr/local/derby/
-su hduser
-hadoop fs -mkdir -p /user/spark/applicationHistory
-hadoop fs -chmod 1777 /user/spark/applicationHistory
-hadoop fs -mkdir -p /tmp
-hadoop fs -chmod g+w /tmp
-hadoop fs -mkdir -p /usr/hive/warehouse
-hadoop fs -chmod g+w /usr/hive/warehouse
-/usr/local/hive/bin/hive #test to make sure hive works
+sudo -i -u hduser hadoop fs -mkdir -p /user/spark/applicationHistory
+sudo -i -u hduser hadoop fs -chmod 1777 /user/spark/applicationHistory
+sudo -i -u hduser hadoop fs -mkdir -p /tmp
+sudo -i -u hduser hadoop fs -chmod g+w /tmp
+sudo -i -u hduser hadoop fs -mkdir -p /usr/hive/warehouse
+sudo -i -u hduser hadoop fs -chmod g+w /usr/hive/warehouse
+sudo -i -u hduser /usr/local/hive/bin/hive #test to make sure hive works
 ```
 
-
-### Spark
+### Spark from source
 ```bash
 cd /usr/local
 git clone git://github.com/apache/spark.git -b branch-2.0
 cd spark
-./spark/build/mvn -Pyarn -Phadoop-2.4 -Dscala-2.11 -DskipTests clean package
+./build/mvn -Pyarn -Phadoop-2.4 -Dscala-2.11 -Phive -DskipTests clean package
 ```
 
-#### RSpark Testing
+#### RSpark Setup
 ```bash
 Rscript -e 'install.packages("devtools", repos="https://cran.rstudio.com")'
 Rscript -e 'install.packages("roxygen2", repos="https://cran.rstudio.com")'
 Rscript -e 'install.packages("testthat", repos="https://cran.rstudio.com")'
+Rscript -e 'install.packages("knitr", repos="https://cran.rstudio.com")'
+Rscript -e 'install.packages("rmarkdown", repos="https://cran.rstudio.com")'
+bash /usr/local/spark/R/install-dev.sh
+bash /usr/local/spark/R/run-tests.sh #if fails with clock related error ignore it
 ```
 
 
