@@ -35,5 +35,9 @@
   uri's scheme determines the config property (fs.SCHEME.impl) naming
   the FileSystem implementation class.  The uri's authority is used to
   determine the host, port, etc. for a filesystem.</description>
- </property>
+</property>
+<property> 
+  <name>dfs.permissions</name> 
+  <value>false</value> 
+</property>
 </configuration>

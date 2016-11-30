@@ -5,3 +5,4 @@ cp -Rv /usr/local/hadoop/etc/hadoop/hdfs-site.xml /root/cluster-computing/config
 cp -Rv /usr/local/hadoop/etc/hadoop/yarn-site.xml /root/cluster-computing/configs/hadoop/
 cp -Rv /usr/local/hadoop/etc/hadoop/mapred-site.xml /root/cluster-computing/configs/hadoop/
 cp -Rv /usr/local/hadoop/etc/hadoop/core-site.xml /root/cluster-computing/configs/hadoop/
+cp -Rv /usr/local/hadoop/etc/hadoop/hadoop-env.sh /root/cluster-computing/configs/hadoop/
