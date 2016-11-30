@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Requires class and project folder"
 spark-submit \
 --class $1 \

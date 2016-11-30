@@ -1,7 +1,4 @@
-
-#sudo -i -u hduser 
-#scp ~/.ssh/id_rsa.pub hduser@$1:.ssh/id_rsa.pub.R
-#ssh hduser@$1 'cat ~/.ssh/id_rsa.pub.R >> ~/.ssh/authorized_keys'
+#!/bin/bash
 scp /home/hduser/.ssh/id_rsa.pub hduser@$1:.ssh/id_rsa.pub.W
 ssh hduser@$1 'cat ~/.ssh/id_rsa.pub.W >> ~/.ssh/authorized_keys'
 scp hduser@$1:.ssh/id_rsa.pub /home/hduser/.ssh/id_rsa.pub.C 

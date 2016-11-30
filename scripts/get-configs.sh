@@ -1,3 +1,4 @@
+#!/bin/bash
 rm -rf /root/cluster-computing/configs/hadoop/*
 cp -Rv /usr/local/hadoop/etc/hadoop/slaves /root/cluster-computing/configs/hadoop/
 cp -Rv /usr/local/hadoop/etc/hadoop/masters /root/cluster-computing/configs/hadoop/
