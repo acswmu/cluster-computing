@@ -49,7 +49,6 @@ dpkg -i --force-overwrite scala-2.10.4.deb
 wget https://dl.bintray.com/sbt/debian/sbt-0.13.11.deb
 dpkg -i sbt-0.13.11.deb
 apt-get update
-apt-get install sbt
 ```
 
 ### Hadoop installation From Source
