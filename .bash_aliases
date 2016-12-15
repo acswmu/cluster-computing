@@ -20,7 +20,7 @@ export R_HOME=/usr/lib/R
 #HIVE VARIABLES START
 export HIVE_HOME=/usr/local/hive
 export PATH=$PATH:$HIVE_HOME/bin
-export CLASSPATH=$CLASSPATH:/usr/local/Hadoop/lib/*:.
+export CLASSPATH=$CLASSPATH:/usr/local/hadoop/lib/*:.
 export CLASSPATH=$CLASSPATH:/usr/local/hive/lib/*:.
 #HIVE VARIABLES END
 
@@ -29,6 +29,12 @@ export DERBY_HOME=/usr/local/derby
 export PATH=$PATH:$DERBY_HOME/bin
 export CLASSPATH=$CLASSPATH:$DERBY_HOME/lib/derby.jar:$DERBY_HOME/lib/derbytools.jar
 #DERBY VARIABLES END
+
+#MAHOUT VARIABLES START
+export MAHOUT_HOME=/usr/local/mahout
+export SPARK_HOME=/usr/local/spark
+export MASTER=spark://192.168.1.1:7077
+#MAHOUT VARIABLES END
 
 #HADOOP VARIABLES START
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
