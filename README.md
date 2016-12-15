@@ -58,6 +58,7 @@ Configuration file examples in configs/hadoop
 ```bash
 groupadd hadoop
 adduser hadoop hduser
+usermod -a -G sudo hduser
 passwd hduser #input password for hduser here
 chown -R hduser:hadoop /root/cluster-computing
 sudo -i -u hduser echo "source /root/cluster-computing/.bash_aliases" >> ~/.bashrc
@@ -68,6 +69,7 @@ sudo -i -u hduser ssh localhost
 ```
 
 - Setting up Hadoop 
+<br> NOTE: if not using 192.168.1.1 as master, change the files in cluster-computing/configs/hadoop/ to the master's IP
 ```bash
 wget https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
 tar xzf protobuf-2.5.0.tar.gz
@@ -90,7 +92,7 @@ chown -R hduser:hadoop /usr/local/hadoop/
 ```
 
 - Starting hdfs for the first time (RUN ON MASTER ONLY)
-<br>After running these steps go http://YOUR_SERVER_IP:50070/dfshealth.html#tab-datanode to ensure node is running
+<br>After running these steps go to http://YOUR_SERVER_IP:50070/dfshealth.html#tab-datanode to ensure node is running
 ```bash
 cd /usr/local/hadoop/
 sudo -i -u hduser mkdir -p /usr/local/hadoop/hadoop_data/hdfs/namenode
@@ -131,6 +133,7 @@ sudo -i -u hduser /usr/local/hive/bin/hive #test to make sure hive works
 ```
 
 ### Spark installation from source
+NOTE: if not using 192.168.1.1 as master, change the files in cluster-computing/configs/spark/ to the master's IP
 ```bash
 cd /usr/local
 git clone git://github.com/apache/spark.git -b branch-1.6
