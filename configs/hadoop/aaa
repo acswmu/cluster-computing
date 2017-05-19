@@ -1,0 +1,8 @@
+aaa
+core-site.xml
+hadoop-env.sh
+hdfs-site.xml
+mapred-site.xml
+masters
+slaves
+yarn-site.xml
