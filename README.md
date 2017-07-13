@@ -1,6 +1,7 @@
 # cluster-computing
 
 - Notes: https://docs.google.com/document/d/1ahgR-jfalc6UZaktGN78Ot6vkBdaZDw0PaNIx-NyMlU/edit?usp=sharing
+- Slideshow: https://drive.google.com/open?id=11n_CQsK-UOzvkz4hY-GrosGcTN2VP6bPiZj_XCgs6qE
 
 ## Build Requirements
 - Ubuntu 16
